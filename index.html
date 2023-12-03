@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Besar Kalkulus</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Turunan Fungsi Aljabar</h1>
+    </header>
+
+    <div class="container">
+      <div class="note-title-container">
+        <h2>Harap baca note agar tidak salah paham!</h2>
+      </div>
+      <div class="note-container">
+        <h3>Note:</h3>
+        <ul>
+          <li>Masukkan nilai a (koefisien) dan nilai n (pangkat)<br />Rumus default: f(x) = a x^n</li>
+          <li>Isi nilai a dengan 1 jika Anda hanya ingin <br />menurunkan pangkat saja</li>
+          <li>Jawaban dan Calculation akan muncul setelah Anda <br />menekan tombol "Enter" atau klik tombol "Hitung"</li>
+        </ul>
+      </div>
+
+      <main>
+        <div class="input-box">
+          <div class="input-field-container">
+            <p for="input-field">Nilai a (koefisien):</p>
+            <input id="input-field" type="number" placeholder="Masukkan angka" onkeydown="keyEnter(event);" />
+
+            <p for="input-field2">Nilai n (pangkat):</p>
+            <input id="input-field2" type="number" placeholder="Masukkan angka" onkeydown="keyEnter(event);" />
+          </div>
+
+          <div class="inputButton">
+            <input type="submit" value="Hitung" onclick="klik();" />
+          </div>
+        </div>
+
+        <div class="output-box">
+          <p>Jawaban:</p>
+          <input type="text" id="output-field" placeholder="" readonly />
+          <p>Calculation:</p>
+          <input type="text" id="output-field2" placeholder="" readonly />
+        </div>
+      </main>
+
+      <footer>
+        <!-- <p>Dibuat oleh Irfan Qobus</p> -->
+      </footer>
+    </div>
+
+    <script src="kalkulator.js"></script>
+  </body>
+</html>
